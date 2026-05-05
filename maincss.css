@@ -261,3 +261,46 @@ input, select {
         margin-top: 10px;
     }
 }
+
+/* Hamburger (hidden on desktop) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+
+    .nav {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        text-align: right;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #00509e;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+
+    .navbar li a {
+        text-align: center;
+        padding: 12px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+}
