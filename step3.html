@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Biodata | Step 3 - Personal Details</title>
+<link rel="stylesheet" href="maincss.css">
+
+<style>
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Button Layout */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Right side buttons */
+.right-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions button,
+.form-actions a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #00509e;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-actions button:hover,
+.form-actions a:hover {
+    background: #003f7d;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="container header-content">
+<div class="header-text">
+    <h1>Student Biodata Form</h1>
+    <p class="dept">Step 3: Personal Details</p>
+</div><div class="header-logo">
+            <img src="logo.jpg" alt="College Logo">
+        </div>
+</div></header>
+
+<!-- MAIN -->
+<div class="container">
+
+<section class="section">
+
+<form action="step4.html">
+
+<div class="grid">
+
+<div>
+<label>Name Of The Candidate *</label>
+<input type="text" name="name" required>
+</div>
+
+<div>
+<label>Father Name *</label>
+<input type="text" name="father" required>
+</div>
+
+<div>
+<label>Mother Name *</label>
+<input type="text" name="mother" required>
+</div>
+
+<div>
+<label>Date of Birth *</label>
+<input type="date" name="dob" required>
+</div>
+
+<div>
+<label>PH Status</label>
+<select name="ph">
+<option>No</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div>
+<label>Religion</label>
+<select name="religion">
+<option>Hindu</option>
+<option>Muslim</option>
+<option>Christian</option>
+<option>Other</option>
+</select>
+</div>
+
+<div>
+<label>Caste</label>
+<select name="caste">
+<option>OC</option>
+<option>BC</option>
+<option>SC</option>
+<option>ST</option>
+</select>
+</div>
+
+<div>
+<label>Sub Caste</label>
+<select name="subcaste">
+<option>General</option>
+<option>BC-A</option>
+<option>BC-B</option>
+<option>BC-C</option>
+<option>BC-D</option>
+<option>BC-E</option>
+<option>SC-I</option>
+<option>SC-II</option>
+<option>ST</option>
+</select>
+</div>
+
+<div>
+<label>Specify Sub-Caste Name *</label>
+<input type="text" name="subcaste_name" required>
+</div>
+
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="form-actions">
+
+    <!-- LEFT -->
+    <button type="reset">Reset</button>
+
+    <!-- RIGHT -->
+    <div class="right-actions">
+        <a href="step2.html">Back</a>
+        <button type="submit">Next</button>
+    </div>
+
+</div>
+
+</form>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    Government Polytechnic College, Warangal<br>
+    MGM Circle, Warangal - 506007, Telangana<br>
+    Affiliated to SBTET Telangana | AICTE Approved<br>
+    © 2026 GPW DCSE
+</footer>
+
+
+</body>
+</html>

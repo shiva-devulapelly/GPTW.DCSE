@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Panel</title>
+<link rel="stylesheet" href="maincss.css">
+
+<style>
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.form-actions {
+    margin-top: 15px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background: #00509e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #003f7d;
+}
+</style>
+
+</head>
+<body>
+
+<header class="header">
+<div class="container header-content">
+<div class="header-text">
+
+    <h1>Staff Notification Panel</h1>
+    <p class="dept">Post Updates for Students</p>
+</div><div class="header-logo">
+            <img src="logo.jpg" alt="College Logo">
+        </div>
+</div>
+
+</header>
+<nav class="nav">
+    <ul class="navbar container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About DCSE</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="step1.html">Biodata Form</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+<li><a href="staff-login.html">Staff Login</a></li>
+
+    </ul>
+</nav>
+<div class="container">
+
+<section class="section">
+
+<form action="done.html">
+
+<label>Select Category</label>
+<select>
+<option>Academic Notifications</option>
+<option>Administrative Announcements</option>
+<option>Department Updates (DCSE)</option>
+<option>Placement & Career</option>
+<option>Events & Activities</option>
+<option>Urgent Notices</option>
+<option>Government Notifications</option>
+</select>
+
+<label>Enter Notification</label>
+<textarea rows="4" required></textarea>
+
+<div class="form-actions">
+<button type="submit">Post Notification</button>
+</div>
+
+</form>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    Government Polytechnic College, Warangal<br>
+    MGM Circle, Warangal - 506007, Telangana<br>
+    Affiliated to SBTET Telangana | AICTE Approved<br>
+    © 2026 GPW DCSE
+</footer>
+
+
+</body>
+</html>

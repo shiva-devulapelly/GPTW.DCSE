@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Biodata | Step 4 - Address Details</title>
+<link rel="stylesheet" href="maincss.css">
+
+<style>
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Button Layout */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Right side buttons */
+.right-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions button,
+.form-actions a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #00509e;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-actions button:hover,
+.form-actions a:hover {
+    background: #003f7d;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="container header-content">
+<div class="header-text">
+    <h1>Student Biodata Form</h1>
+    <p class="dept">Step 4: Address Details</p>
+</div><div class="header-logo">
+            <img src="logo.jpg" alt="College Logo">
+        </div>
+</div></header>
+
+<!-- MAIN -->
+<div class="container">
+
+<section class="section">
+
+<form action="step5.html">
+
+<div class="grid">
+
+<div>
+<label>House No</label>
+<input type="text" name="house">
+</div>
+
+<div>
+<label>Village / Street</label>
+<input type="text" name="village">
+</div>
+
+<div>
+<label>Mandal / Town</label>
+<input type="text" name="mandal">
+</div>
+
+<div>
+<label>Pincode</label>
+<input type="text" name="pincode" maxlength="6" pattern="[0-9]{6}" title="Enter 6 digit pincode">
+</div>
+
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="form-actions">
+
+    <!-- LEFT -->
+    <button type="reset">Reset</button>
+
+    <!-- RIGHT -->
+    <div class="right-actions">
+        <a href="step3.html">Back</a>
+        <button type="submit">Next</button>
+    </div>
+
+</div>
+
+</form>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    Government Polytechnic College, Warangal<br>
+    MGM Circle, Warangal - 506007, Telangana<br>
+    Affiliated to SBTET Telangana | AICTE Approved<br>
+    © 2026 GPW DCSE
+</footer>
+
+</body>
+</html>

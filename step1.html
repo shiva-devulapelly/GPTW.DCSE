@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Biodata | Step 1 - Basic Identification</title>
+<link rel="stylesheet" href="maincss.css">
+
+<style>
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Buttons Layout */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #00509e;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-actions button:hover {
+    background: #003f7d;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+
+<header class="header">
+    <div class="container header-content">
+        <div class="header-text">
+            <h1>Student Biodata Form</h1>
+            
+            <p class="dept">
+                C-26 Curriculum – Diploma Students (DCSE)
+            </p>
+            
+            <p class="dept-desc">
+                This biodata form is designed for students under the C-26 curriculum, primarily for the Department of Computer Science Engineering (DCSE)</p>
+            
+            <p class="dept">Step 1: Basic Identification</p>
+        </div>
+    
+
+
+
+<div class="header-logo">
+            <img src="logo.jpg" alt="College Logo">
+        </div>
+</div></div>
+</header>
+<nav class="nav">
+    <ul class="navbar container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About DCSE</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+<li><a href="staff-login.html">Staff Login</a></li>
+
+    </ul>
+</nav>
+<!-- MAIN CONTENT -->
+<div class="container">
+
+<section class="section">
+
+<form action="step2.html">
+
+<div class="grid">
+
+<div>
+<label>PIN *</label>
+<input type="text" name="pin" required>
+</div>
+
+<div>
+<label>Biometric ID *</label>
+<input type="text" name="biometric" required>
+</div>
+
+<div>
+<label>AADHAR *</label>
+<input type="text" name="aadhar" maxlength="12" required>
+</div>
+
+<div>
+<label>APAAR ID *</label>
+<input type="text" name="apaar" maxlength="12" required>
+</div>
+
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="form-actions">
+<button type="reset">Reset</button>
+<button type="submit">Next</button>
+</div>
+
+</form>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    Government Polytechnic College, Warangal<br>
+    MGM Circle, Warangal - 506007, Telangana<br>
+    Affiliated to SBTET Telangana | AICTE Approved<br>
+    © 2026 GPW DCSE
+</footer>
+
+
+</body>
+</html>

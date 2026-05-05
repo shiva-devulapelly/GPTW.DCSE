@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Biodata | Step 6 - Documents</title>
+<link rel="stylesheet" href="maincss.css">
+
+<style>
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-item input {
+    width: auto;
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.right-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions button,
+.form-actions a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #00509e;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-actions button:hover,
+.form-actions a:hover {
+    background: #003f7d;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="container header-content">
+<div class="header-text">
+    <h1>Student Biodata Form</h1>
+    <p class="dept">Step 6: Documents Submitted</p>
+</div><div class="header-logo">
+            <img src="logo.jpg" alt="College Logo">
+        </div>
+</div></header>
+
+<!-- MAIN -->
+<div class="container">
+
+<section class="section">
+
+<form action="step7.html">
+
+<div class="grid">
+
+<label class="checkbox-item"><input type="checkbox"> Fee Receipt</label>
+<label class="checkbox-item"><input type="checkbox"> ROC Form</label>
+<label class="checkbox-item"><input type="checkbox"> Allotment Order</label>
+<label class="checkbox-item"><input type="checkbox"> Rank Card</label>
+<label class="checkbox-item"><input type="checkbox"> Polycet Hall Ticket</label>
+<label class="checkbox-item"><input type="checkbox"> SSC Memo</label>
+<label class="checkbox-item"><input type="checkbox"> Study Certificates</label>
+<label class="checkbox-item"><input type="checkbox"> Caste Certificate</label>
+<label class="checkbox-item"><input type="checkbox"> TC (Original)</label>
+<label class="checkbox-item"><input type="checkbox"> Income Certificate</label>
+<label class="checkbox-item"><input type="checkbox"> EWS</label>
+<label class="checkbox-item"><input type="checkbox"> Joining Letter</label>
+
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="form-actions">
+
+    <!-- LEFT -->
+    <button type="reset">Reset</button>
+
+    <!-- RIGHT -->
+    <div class="right-actions">
+        <a href="step5.html">Back</a>
+        <button type="submit">Next</button>
+    </div>
+
+</div>
+
+</form>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    Government Polytechnic College, Warangal<br>
+    MGM Circle, Warangal - 506007, Telangana<br>
+    Affiliated to SBTET Telangana | AICTE Approved<br>
+    © 2026 GPW DCSE
+</footer>
+
+
+</body>
+</html>

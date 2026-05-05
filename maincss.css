@@ -1,0 +1,263 @@
+﻿/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox-group {
+    display: flex;
+    gap: 30px;              /* space between boxes */
+    align-items: center;
+    flex-wrap: wrap;        /* responsive for mobile */
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-logo img {
+        height: 100px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .header-logo img {
+        height: 80px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+}
+
+.header-logo img {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+}
+/* Left text block */
+.header-text {
+    flex: 1;
+}
+
+/* Right image block */
+.header-logo img {
+    width: 130px;/* adjust size */
+    height: auto;
+    border-radius: 8px; /* optional styling */
+}
+/* Body */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background: #002147;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+.header .dept {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #cce6ff;
+}
+
+/* Navbar */
+.nav {
+    background: #00509e;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li a {
+    display: block;
+    padding: 14px 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar li a:hover {
+    background: #003f7d;
+}
+
+/* Hero Section */
+.hero {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-left: 5px solid #00509e;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    color: #002147;
+}
+
+/* Sections */
+.section {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.section h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Forms */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+.dept {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.dept-desc {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #444;
+}
+
+.credit {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #777;
+}
+
+.notice-bar {
+    background: #003366;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.notice-bar p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Footer */
+.footer {
+    text-align: center;
+    background: #002147;
+    color: white;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+.header {
+    background: #003366;
+    color: white;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left text */
+.header-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-text p {
+    margin: 5px 0;
+}
+
+.dept {
+    font-size: 18px;
+}
+
+/* Right image */
+.header-logo img {
+    height: 80px;   /* increase/decrease as needed */
+    width: auto;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-logo {
+        margin-top: 10px;
+    }
+}

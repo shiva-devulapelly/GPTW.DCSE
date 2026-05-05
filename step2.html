@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Biodata | Step 2 - Academic Details</title>
+<link rel="stylesheet" href="maincss.css">
+
+<style>
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Button Layout */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Right side grouping */
+.right-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions button,
+.form-actions a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #00509e;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-actions button:hover,
+.form-actions a:hover {
+    background: #003f7d;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="container header-content">
+<div class="header-text">
+    <h1>Student Biodata Form</h1>
+    <p class="dept">Step 2: Academic Details</p>
+</div><div class="header-logo">
+            <img src="logo.jpg" alt="College Logo">
+        </div>
+</div></header>
+
+<!-- MAIN -->
+<div class="container">
+
+<section class="section">
+
+<form action="step3.html">
+
+<div class="grid">
+
+<div>
+<label>SSC Hall Ticket Number *</label>
+<input type="text" name="ssc" maxlength="10" required>
+</div>
+
+<div>
+<label>Polycet Hall Ticket Number *</label>
+<input type="text" name="polycet" maxlength="7" required>
+</div>
+
+<div>
+<label>Polycet Rank *</label>
+<input type="number" name="rank" required>
+</div>
+
+<div>
+<label>SSC GPA *</label>
+<input type="number" name="gpa" step="0.1" min="0" max="10" required>
+</div>
+
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="form-actions">
+    
+    <!-- LEFT -->
+    <button type="reset">Reset</button>
+
+    <!-- RIGHT -->
+    <div class="right-actions">
+        <a href="step1.html">Back</a>
+        <button type="submit">Next</button>
+    </div>
+
+</div>
+
+</form>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    Government Polytechnic College, Warangal<br>
+    MGM Circle, Warangal - 506007, Telangana<br>
+    Affiliated to SBTET Telangana | AICTE Approved<br>
+    © 2026 GPW DCSE
+</footer>
+
+</body>
+</html>

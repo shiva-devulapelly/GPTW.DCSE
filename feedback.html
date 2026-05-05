@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Feedback System</title>
+<link rel="stylesheet" href="maincss.css">
+
+<style>
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-weight: 500;
+}
+
+textarea {
+    resize: none;
+}
+
+.rating {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.rating input {
+    width: auto;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.form-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background: #00509e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #003f7d;
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container header-content">
+<div class="header-text">
+
+
+    <h1>Student Feedback Portal</h1>
+    <p class="dept">DCSE Department</p>
+</div><div class="header-logo">
+            <img src="logo.jpg" alt="College Logo">
+        </div>
+</div>
+</header>
+<nav class="nav">
+    <ul class="navbar container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About DCSE</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="step1.html">Biodata Form</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+<li><a href="staff-login.html">Staff Login</a></li>
+
+       
+    </ul>
+</nav>
+<div class="container">
+
+<section class="section">
+
+<form action="thankyou.html">
+
+<!-- BASIC DETAILS -->
+<label>Name (Optional)</label>
+<input type="text">
+
+<label>PIN (Optional)</label>
+<input type="text">
+
+<label>Department</label>
+<select>
+    <option>DCSE</option>
+    <option>ECE</option>
+    <option>EEE</option>
+    <option>CIVIL</option>
+    <option>MECH</option>
+</select>
+
+<label>Semester</label>
+<input type="text">
+
+<!-- CATEGORY -->
+<label>Feedback Category *</label>
+<select required>
+    <option>Academics</option>
+    <option>Faculty</option>
+    <option>Infrastructure</option>
+    <option>Lab Facilities</option>
+    <option>Placement Support</option>
+    <option>Website Issues</option>
+    <option>General Suggestion</option>
+</select>
+
+<hr><br>
+
+<!-- RATING SYSTEM -->
+<h3>Rate the Following (1 to 5)</h3>
+
+<label>Teaching Quality</label>
+<div class="rating">
+<input type="radio" name="teach">1
+<input type="radio" name="teach">2
+<input type="radio" name="teach">3
+<input type="radio" name="teach">4
+<input type="radio" name="teach">5
+</div>
+
+<label>Lab Facilities</label>
+<div class="rating">
+<input type="radio" name="lab">1
+<input type="radio" name="lab">2
+<input type="radio" name="lab">3
+<input type="radio" name="lab">4
+<input type="radio" name="lab">5
+</div>
+
+<label>Cleanliness</label>
+<div class="rating">
+<input type="radio" name="clean">1
+<input type="radio" name="clean">2
+<input type="radio" name="clean">3
+<input type="radio" name="clean">4
+<input type="radio" name="clean">5
+</div>
+
+<label>Acadamic Guidance</label>
+<div class="rating">
+<input type="radio" name="wifi">1
+<input type="radio" name="wifi">2
+<input type="radio" name="wifi">3
+<input type="radio" name="wifi">4
+<input type="radio" name="wifi">5
+</div>
+
+<label>Faculty Support</label>
+<div class="rating">
+<input type="radio" name="placement">1
+<input type="radio" name="placement">2
+<input type="radio" name="placement">3
+<input type="radio" name="placement">4
+<input type="radio" name="placement">5
+</div>
+
+<br>
+
+<!-- FEEDBACK BOX -->
+<label>Detailed Feedback (Max 500 characters)</label>
+<textarea maxlength="500" rows="6"  cols="90" placeholder="Be specific. Mention issues and suggestions clearly."></textarea>
+
+<br>
+
+<!-- FILE UPLOAD -->
+<label>Upload Proof (Optional)</label>
+<input type="file">
+
+<br><br>
+<div class="checkbox-group">
+
+    <div class="checkbox">
+        <label><input type="checkbox"> Submit Anonymously</label>
+    </div>
+
+    <div class="checkbox">
+        <label><input type="checkbox"> Mark as Complaint (Requires action)</label>
+    </div>
+
+</div>
+<BR>
+<label>Priority Level</label>
+<select>
+    <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+</select>
+
+<!-- SUBMIT -->
+<div class="form-actions">
+<button type="submit">Submit Feedback</button>
+</div>
+</form>
+
+</section>
+
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+    Government Polytechnic College, Warangal<br>
+    MGM Circle, Warangal - 506007, Telangana<br>
+    Affiliated to SBTET Telangana | AICTE Approved<br>
+    © 2026 GPW DCSE
+</footer>
+
+
+</body>
+</html>
